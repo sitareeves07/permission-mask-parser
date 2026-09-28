@@ -1,0 +1,17 @@
+{
+  "name": "permission-mask-parser",
+  "version": "0.1.0",
+  "description": "Parses and converts between octal mode strings, numeric modes, and symbolic permission notation.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
