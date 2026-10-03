@@ -50,3 +50,10 @@ in a different library.
 - `formatNumeric(n)` → `number` — validates and returns a numeric mode.
 - `SymbolicParseError` — thrown on malformed symbolic input.
 - `OctalParseError` — thrown on malformed octal or out-of-range numeric input.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
